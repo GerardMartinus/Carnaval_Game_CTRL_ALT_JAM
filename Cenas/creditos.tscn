@@ -1,0 +1,117 @@
+[gd_scene load_steps=3 format=3 uid="uid://b70215ep5d53t"]
+
+[ext_resource type="Script" path="res://Codigos/Creditos.gd" id="1_gvxj0"]
+[ext_resource type="FontFile" uid="uid://b7uy7i4rm5u2p" path="res://Codigos/fontes/Minecraft.ttf" id="2_jju58"]
+
+[node name="Creditos" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 7.0
+offset_right = 1.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gvxj0")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -140.0
+offset_top = -427.0
+offset_right = 141.0
+offset_bottom = -183.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_jju58")
+theme_override_font_sizes/font_size = 30
+text = "Desenvolvido por:"
+
+[node name="Bruno" type="Button" parent="HBoxContainer/VBoxContainer" groups=["creditos"]]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("2_jju58")
+text = "Bruno Martins"
+flat = true
+
+[node name="Felipe" type="Button" parent="HBoxContainer/VBoxContainer" groups=["creditos"]]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("2_jju58")
+text = "Felipe Stocker"
+flat = true
+
+[node name="Gabriel" type="Button" parent="HBoxContainer/VBoxContainer" groups=["creditos"]]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("2_jju58")
+text = "Gabriel Paiva"
+flat = true
+
+[node name="Jhow" type="Button" parent="HBoxContainer/VBoxContainer" groups=["creditos"]]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("2_jju58")
+text = "Jhonatan Souza"
+flat = true
+
+[node name="Joao" type="Button" parent="HBoxContainer/VBoxContainer" groups=["creditos"]]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("2_jju58")
+text = "João Vitor"
+flat = true
+
+[node name="Layon" type="Button" parent="HBoxContainer/VBoxContainer" groups=["creditos"]]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("2_jju58")
+text = "Layon Pereira"
+flat = true
+
+[node name="Will" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("2_jju58")
+text = "Willian Nishimura"
+flat = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -55.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Volta" type="Button" parent="HBoxContainer2" groups=["creditos"]]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Voltar"
+flat = true

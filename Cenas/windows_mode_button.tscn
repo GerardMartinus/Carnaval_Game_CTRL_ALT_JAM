@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh5eucft8i2oj"]
+
+[ext_resource type="PackedScene" uid="uid://u5ohwcioof3y" path="res://Cenas/options.tscn" id="1_0iwtk"]
+[ext_resource type="Script" path="res://Codigos/windows_mode_button.gd" id="2_wxp3n"]
+
+[node name="Windows_Mode_Button" instance=ExtResource("1_0iwtk")]
+script = ExtResource("2_wxp3n")

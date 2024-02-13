@@ -1,0 +1,86 @@
+[gd_scene load_steps=4 format=3 uid="uid://ns103l5mvcq2"]
+
+[ext_resource type="Script" path="res://Codigos/Menu Principal.gd" id="1_fi0ho"]
+[ext_resource type="FontFile" uid="uid://b7uy7i4rm5u2p" path="res://Codigos/fontes/Minecraft.ttf" id="2_17jov"]
+[ext_resource type="PackedScene" uid="uid://dx77lcct13aa6" path="res://Cenas/options_menu.tscn" id="3_ls0k7"]
+
+[node name="Main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fi0ho")
+
+[node name="Imagem de fundo" type="TextureRect" parent="."]
+layout_mode = 2
+offset_right = 40.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 30
+
+[node name="Start_Button" type="Button" parent="MarginContainer/VBox" groups=["Button"]]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("2_17jov")
+theme_override_font_sizes/font_size = 30
+text = "Play
+"
+flat = true
+alignment = 0
+
+[node name="Options_Button" type="Button" parent="MarginContainer/VBox" groups=["Button"]]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("2_17jov")
+theme_override_font_sizes/font_size = 30
+text = "Configurações
+"
+flat = true
+alignment = 0
+
+[node name="Creditos" type="Button" parent="MarginContainer/VBox" groups=["Button"]]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+focus_mode = 0
+theme_override_fonts/font = ExtResource("2_17jov")
+theme_override_font_sizes/font_size = 27
+text = "CRÉDITOS
+"
+flat = true
+
+[node name="Exit_Button" type="Button" parent="MarginContainer/VBox" groups=["Button"]]
+layout_mode = 2
+focus_mode = 0
+theme_override_constants/h_separation = 100
+theme_override_fonts/font = ExtResource("2_17jov")
+theme_override_font_sizes/font_size = 30
+text = "Quit
+"
+flat = true
+alignment = 0
+
+[node name="Options_menu" parent="." instance=ExtResource("3_ls0k7")]
+visible = false
+layout_mode = 1
